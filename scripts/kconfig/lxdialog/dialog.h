@@ -35,8 +35,12 @@
 #ifdef __sun__
 #define CURS_MACROS
 #endif
-#include CURSES_LOC
 
+#include <ncurses.h>
+
+#ifndef KEY_MAX
+#define KEY_MAX 0777
+#endif
 /*
  * Colors in ncurses 1.9.9e do not work properly since foreground and
  * background colors are OR'd rather than separately masked.  This version
