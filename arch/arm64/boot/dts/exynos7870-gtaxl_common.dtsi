@@ -245,10 +245,12 @@
 		caps-control;
 		supports-highspeed;
 		supports-4bit;
-		sd-uhs-sdr104;
 		keep-power-in-suspend;
 		pm-ignore-notify;
-		card-detect-type-external;
+		broken-cd;
+                non-removable;
+                supports-sdio;
+                cap-sdio-irq;
 		use-broken-voltage;
 		use-fine-tuning;
 		ignore-phase = <(1 << 7)>;
