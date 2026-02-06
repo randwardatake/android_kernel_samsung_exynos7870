@@ -1,3 +1,13 @@
+/* SDIO WiFi stability (prevent "card removed" while connecting) */
+&dwmmc_1 {
+        non-removable;
+        keep-power-in-suspend;
+        cap-sdio-irq;
+        enable-sdio-wakeup;
+        disable-wp;
+        bus-width = <4>;
+};
+
 /*
  * SAMSUNG UNIVERSAL8890 board device tree source
  *
